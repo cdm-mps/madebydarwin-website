@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lekton.className} bg-main-gradient overflow-hidden`}>{children}</body>
+      <body className={`${lekton.className} bg-main-gradient overflow-hidden bg-cover bg-fixed`}>{children}</body>
     </html>
   );
 }
