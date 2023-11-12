@@ -1,6 +1,5 @@
 "use client";
 import clsx from "clsx";
-import Image from "next/image";
 import React, { useEffect } from "react";
 
 export default function Home() {
@@ -17,7 +16,7 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center p-12 sm:p-24">
-      <div className="flex flex-col items-center justify-between h-[80vh]">
+      <div className="flex flex-col items-center justify-between h-[70vh]">
         <p className="text-2xl sm:text-4xl">{"{WIP}"}</p>
         <div>
           <p className="text-6xl sm:text-8xl font-bold">MADE BY DARWIN</p>
@@ -38,7 +37,7 @@ export default function Home() {
       </div>
       <p
         className={clsx(
-          "text-base font-bold sm:text-xl mt-4 ",
+          "text-base font-bold sm:text-xl mt-4",
           !copied && "hidden"
         )}
       >
