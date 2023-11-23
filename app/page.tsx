@@ -1,6 +1,7 @@
 "use client";
 import clsx from "clsx";
 import React, { useEffect } from "react";
+import Image from "next/image";
 
 export default function Home() {
   const email = "madebydarwin@gmail.com";
@@ -19,6 +20,13 @@ export default function Home() {
       <div className="flex flex-col items-center justify-between h-[70vh]">
         <p className="text-2xl sm:text-4xl">{"{WIP}"}</p>
         <div>
+          <Image
+            src="/images/darwin-dots.svg"
+            height={32}
+            width={32}
+            alt="Made By Darwin"
+          
+          />
           <p className="text-6xl sm:text-8xl font-bold">MADE BY DARWIN</p>
           <p className="text-2xl sm:text-4xl">DESIGN AND DEVELOPMENT</p>
         </div>
@@ -27,7 +35,7 @@ export default function Home() {
           <p
             className={clsx(
               "text-xl sm:text-3xl",
-              !copied && "hover:underline cursor-pointer"
+              !copied && "sm:hover:underline cursor-pointer"
             )}
             title={!copied ? "copy" : undefined}
             onClick={() => {
