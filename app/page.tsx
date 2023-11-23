@@ -16,7 +16,7 @@ export default function Home() {
   }, [copied]);
 
   return (
-    <main className="flex flex-col items-center p-12 sm:p-24">
+    <main className="flex flex-col items-center p-12 text-white sm:p-24">
       <div className="flex flex-col items-center justify-between h-[70vh]">
         <p className="text-2xl sm:text-4xl">{"{WIP}"}</p>
         <div>
