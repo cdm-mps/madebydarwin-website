@@ -25,10 +25,16 @@ export default function Home() {
         <div className="flex flex-col items-center mt-24 gap-4">
           <p className="text-2xl sm:text-4xl font-bold">REACH US AT</p>
           <p
-            className="text-xl sm:text-3xl hover:underline cursor-pointer"
+            className={clsx(
+              "text-xl sm:text-3xl",
+              !copied && "hover:underline cursor-pointer"
+            )}
+            title={!copied ? "copy" : undefined}
             onClick={() => {
-              setCopied(true);
-              navigator.clipboard.writeText(email);
+              if (!copied) {
+                setCopied(true);
+                navigator.clipboard.writeText(email);
+              }
             }}
           >
             {email}
